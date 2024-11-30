@@ -1,9 +1,19 @@
-import Navbar from "./components/Navbar";
+import { useState } from 'react';
 
-export default function Home() {
+
+const Home = () => {
+  const [message, setMessage] = useState('Hello World');
+
+  const toggleMessage = () => {
+    setMessage(prevMessage => (prevMessage === 'Hello World' ? 'Goodbye World' : 'Hello World'));
+  };
+
   return (
-    <>
-    <Navbar></Navbar>
-    </>
+    <div>
+      <h1>{message}</h1>
+      <button onClick={toggleMessage}>Toggle Message</button>
+    </div>
   );
-}
+};
+
+export default Home;

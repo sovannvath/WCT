@@ -1,19 +1,10 @@
-import { useState } from 'react';
+
+import Button from "./components/Button";
+import React from "react";
 
 
-const Home = () => {
-  const [message, setMessage] = useState('Hello World');
-
-  const toggleMessage = () => {
-    setMessage(prevMessage => (prevMessage === 'Hello World' ? 'Goodbye World' : 'Hello World'));
-  };
-
-  return (
-    <div>.
-      <h1>{message}</h1>
-      <button onClick={toggleMessage}>Hello world</button>
-    </div>
-  );
+const page = () => {
+  <Button></Button>
 };
 
-export default Home;
+export default page ;

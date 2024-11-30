@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div>.
       <h1>{message}</h1>
-      <button onClick={toggleMessage}>Toggle Message</button>
+      <button onClick={toggleMessage}>Hello world</button>
     </div>
   );
 };

@@ -9,7 +9,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div>.
       <h1>{message}</h1>
       <button onClick={toggleMessage}>Toggle Message</button>
     </div>

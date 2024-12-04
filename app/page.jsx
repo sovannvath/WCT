@@ -1,10 +1,10 @@
 
-import Button from "./components/Button";
+import Card from "./components/Card";
 import React from "react";
 
 
 const page = () => {
-  <Button></Button>
+  <Card></Card>
 };
 
 export default page ;
